@@ -14,7 +14,7 @@ bool Game::init() {
 
 	SDL_SetRenderDrawColor(renderer, 200, 200, 0, 255);
 
-	player1 = new Player(0, 50);
+	
 
 	running = true;
 	return true;

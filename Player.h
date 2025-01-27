@@ -8,6 +8,7 @@ public:
 	Player(int p_x, int p_y);
 	void update();
 	void handleInput();
+	void move(int movement);
 
 	void setX(int s_x) { x = s_x; }
 	void setY(int s_y) { y = s_y; }

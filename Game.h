@@ -22,15 +22,14 @@ public:
 		}
 		return t_instance;
 	}
+	
+	Player* player1 = new Player(0, 50);
+	Player* player2;
 
 private:
 
 	static Game* t_instance;
 
-	Player* player1;
-	Player* player2;
-
-	
 	SDL_Window* window;
 	SDL_Window* player_w;
 	SDL_Renderer* renderer;
