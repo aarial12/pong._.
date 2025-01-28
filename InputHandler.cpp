@@ -23,3 +23,38 @@ void InputHandler::update() {
 		
 	}
 }
+
+bool InputHandler::up(int p_ID) {
+	if (SDL_PollEvent(&event)) {
+		if (p_ID == 1) {
+			if (event.key.keysym.sym == SDLK_w) {
+				return true;
+			}
+		}
+		else {
+			if (event.key.keysym.sym == SDLK_UP) {
+				return true;
+			}
+		}
+		return false;
+	}
+	return false;
+}
+
+bool InputHandler::down(int p_ID) {
+	if (SDL_PollEvent(&event)) {
+		if (p_ID == 1) {
+			if (event.key.keysym.sym == SDLK_s) {
+				return true;
+			}
+		}
+		else {
+			if (event.key.keysym.sym == SDLK_DOWN) {
+				return true;
+			}
+		}
+		return false;
+	}
+	return false;
+}
+

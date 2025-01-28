@@ -23,8 +23,8 @@ public:
 		return t_instance;
 	}
 	
-	Player* player1 = new Player(0, 50);
-	Player* player2;
+	Player* player1 = new Player(0, 50, 1);
+	Player* player2 = new Player(1820, 500, 2);
 
 private:
 

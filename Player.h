@@ -5,10 +5,10 @@ class Player
 {
 
 public:
-	Player(int p_x, int p_y);
+	Player(int p_x, int p_y, int ID);
 	void update();
 	void handleInput();
-	void move(int movement);
+	void move();
 
 	void setX(int s_x) { x = s_x; }
 	void setY(int s_y) { y = s_y; }
@@ -17,10 +17,9 @@ public:
 
 	int x, y;
 
-public:
+private:
 
-	int heigth = 300;
-	int width = 100;
+	int ID;
 	SDL_Window* player_w;
 };
 

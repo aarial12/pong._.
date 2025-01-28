@@ -14,16 +14,13 @@ bool Game::init() {
 
 	SDL_SetRenderDrawColor(renderer, 200, 200, 0, 255);
 
-	
-
 	running = true;
 	return true;
 }
 
 void Game::update() {
-
-	InputHandler::Instance()->update();
 	player1->update();
+	player2->update();
 }
 
 void Game::render() {
